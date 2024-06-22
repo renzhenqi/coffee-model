@@ -1,0 +1,33 @@
+<view class="container">
+	<view class="sider-bar">
+		<scroll-view scroll-y="true" :scroll-top="verticalNavTop" scroll-with-animation="true">
+		<block wx:for="{{tabs}}" wx:key="timeStamp" wx:for-item="item">
+			<view class="tab-item {{item.index==0 ? 'first' : ''}} {{item.isActive ? 'active' : ''}}" data-index="{{item.index}}" bind:tap="tapselect">{{item.name}}</view>
+		</block>
+	</scroll-view>
+	</view>
+	<view class="main">
+		<scroll-view class="main-content" scroll-y bind:scroll="mainScroll">
+			<block wx:for="{{list}}" wx:key="index" wx:for-item="item">
+				<view class="product">
+					<view class="img">
+						<image src="{{item.picture}}" mode="widthFix"/>
+					</view>
+					<view class="info">
+						<view class="top">
+							<view>{{item.name}}</view>
+							<view>销量：{{item.sold}}</view>
+						</view>
+						<view class="bottom">
+							<view class="price">¥ {{item.price}}</view>
+							<view class="type">
+								<view class="word">选规格</view>
+							</view>
+						</view>
+					</view>
+					
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "siderbar-scroll-view": "../../Components/siderbar-scroll-view/siderbar-scroll-view"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationStyle": "default",
+  "backgroundTextStyle": "dark",
+  "style":"v2"
+}

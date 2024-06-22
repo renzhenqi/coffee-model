@@ -1,0 +1,102 @@
+.cateBox {
+	position: absolute;
+	bottom: 0;
+	background: #fff;
+	width: 100%;
+	display: flex;
+  }
+   
+  .cate-left {
+	width: 200rpx;
+	background: #f4f4f4;
+	height: 100%;
+  }
+   
+  .cate-left-item {
+	background-color: rgb(245,245,245);
+	height: 50px;
+	line-height: 50px;
+	font-size: 28rpx;
+	align-items: center;
+  }
+   
+  .activeItem {
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	color: red;
+	font-size: 32rpx;
+	align-items: center;
+	text-align: center;
+  }
+   
+  .cate-left-item label {
+	width: 4rpx;
+	height: 15px;
+	float: left;
+	background: #f4f4f4;
+  }
+   
+  .cate-left-item.activeItem label {
+	background: #0bbbef;
+  }
+   
+  .cate-left-item text {
+	width: 196rpx;
+	font-size: 28rpx;
+	display: block;
+	text-align: center;
+  }
+   
+  /* 右侧*/
+  .cate-right {
+	flex: 1;
+  }
+   
+  .cate-right-title {
+	text-align: center;
+	font-size: 28rpx;
+	margin-top: 20rpx;
+	line-height: 80rpx;
+	position: relative;
+  }
+   
+  .cate-right-title .line {
+	position: absolute;
+	height: 2rpx;
+	width: 300rpx;
+	top: 39rpx;
+	left: 50%;
+	margin-left: -150rpx;
+  }
+   
+  .cate-right-title text {
+	background: #fff;
+	padding: 0 10px;
+	position: relative;
+	/* color: #999; */
+  }
+   
+  .cate-right-list {
+	height: auto;
+	overflow: hidden;
+  }
+   
+  .cate-right-item {
+	width: 33.33%;
+	float: left;
+	margin-top: 20rpx;
+  }
+   
+  .cate-right-item image {
+	width: 160rpx;
+	height: 160rpx;
+	display: block;
+	margin: 0 auto;
+  }
+   
+  .cate-right-item text {
+	display: block;
+	text-align: center;
+	font-size: 24rpx;
+  }

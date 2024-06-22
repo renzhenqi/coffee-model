@@ -1,0 +1,37 @@
+ 
+<view>
+  <view class="cateBox">
+    <!-- 左侧列表 -->
+    <scroll-view class="cate-left" scroll-y="true" :scroll-top="verticalNavTop" scroll-with-animation>
+      <view class="cate-left-list" wx:for="{{shopList}}" wx:key="index" bindtap="tapselect" data-index="{{index}}">
+        <view class="{{currentTab==index ? 'activeItem':'cate-left-item'}} " >
+          <label></label><text>{{item.navtitle}}</text>
+        </view>
+      </view>
+    </scroll-view>
+ 
+    <!-- 右侧列表 -->
+    <scroll-view class="cate-right" style="height: 100vh;" scroll-y="true" bindscroll="mainScroll" scroll-into-view="cate-{{mainCur}}"
+      scroll-with-animation>
+      <view wx:for="{{shopList}}" wx:key="index" id="cate-{{index}}">
+        <view class="cate-right-title">
+          <view class="line"></view>
+          <text>{{item.navtitle}}</text>
+        </view>
+        <view class="cate-right-list">
+          <view class="cate-right-item" wx:for="{{item.shop}}" wx:key="childindex" wx:for-item="child"
+            bindtap="getShop" data-child="{{child}}">
+            <image src="{{child.shopimage}}" mode=""></image>
+            <text>{{child.shoptitle}}</text>
+          </view>
+        </view>
+      </view>
+      <view style="height: 100px;"></view>
+    </scroll-view>
+  </view>
+ 
+</view>
+ 
+ 
+ 
+ 

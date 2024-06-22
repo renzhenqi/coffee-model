@@ -1,0 +1,102 @@
+/* pages/products/products.wxss */
+page {
+	box-sizing: border-box;
+	/* padding: 20rpx; */
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	/* padding: 20rpx; */
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+} 
+
+.sider-bar {
+	width: 25%;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	overflow: auto; /* 添加滚动条以支持菜单栏超出屏幕时的滚动 */
+}
+
+.tab-item {
+	margin: 20rpx 0;
+	padding: 50rpx 10rpx;
+	text-align: center;
+	/* background-color: #ffffff; */
+}
+
+/* 写法没生效 */
+/* .sider-bar > .tab-item:first-child {
+	margin-top: 0 !important;
+} */
+
+.first {
+	margin-top: 0;
+}
+
+.active {
+	background-color: #ffffff;
+}
+
+.main {
+	width: 75%;
+	background-color: #ffffff;
+	height: 100vh;
+	box-sizing: border-box;
+	margin-left: 25%; /* 留出左侧菜单栏的空间 */
+  	overflow: auto; /* 添加滚动条以支持内容区域超出屏幕时的滚动 */
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+	margin-bottom: 30rpx;
+}
+
+.product image {
+	width: 200rpx;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 30rpx;
+	/* align-items: flex-end; */
+	justify-content: space-between;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.type {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+}
+
+.word {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	border: #000000 1rpx solid;
+	background: #000000;
+	height: 30rpx;
+	width: 140rpx;
+	border-radius: 30rpx;
+	padding: 15rpx 0;
+	font-size: smaller;
+}
