@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "siderbar-scroll-view": "../../Components/siderbar-scroll-view/siderbar-scroll-view"
+    "mp-vtabs": "../../Components/vtabs/index",
+    "mp-vtabs-content": "../../Components/vtabs-content/index"
   },
   "navigationBarTitleText": "个人中心",
   "navigationStyle": "default",
