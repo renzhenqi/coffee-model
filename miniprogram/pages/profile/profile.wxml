@@ -1,13 +1,42 @@
+<!-- <view>
+  <view>成都凯德金牛店</view>
+</view> -->
 <mp-vtabs 
   vtabs="{{vtabs}}" 
   activeTab="{{activeTab}}" 
   bindtabclick="onTabCLick"
   bindchange="onChange"
   class="test"
+  tab-bar-line-color="#000000"
+  tab-bar-inactive-text-color="	#696969"
+  tab-bar-active-text-color="#000000"
+
 >
   <block wx:for="{{vtabs}}" wx:key="title" >
     <mp-vtabs-content tabIndex="{{index}}">
-      <view class="vtabs-content-item">我是第{{index + 1}}项： {{item.title}}</view>
+      <view class="vtabs-content-item">我是第{{index + 1}}项： {{item.title}}
+        <block wx:for="{{item.children}}" wx:key="index" wx:for-item="item2">
+				<view class="product">
+					<view class="img">
+						<image src="{{item2.picture}}" mode="widthFix"/>
+					</view>
+					<view class="info">
+						<view class="top">
+							<view>{{item2.name}}</view>
+							<view>销量：{{item2.sold}}</view>
+						</view>
+						<view class="bottom">
+							<view class="price">¥ {{item2.price}}</view>
+							<view class="type">
+								<view class="word">选规格</view>
+							</view>
+						</view>
+					</view>
+					
+				</view>
+			</block>
+      </view>
+      
     </mp-vtabs-content>
   </block>
 </mp-vtabs>

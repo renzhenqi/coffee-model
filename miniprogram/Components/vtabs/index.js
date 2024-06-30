@@ -179,6 +179,7 @@ Component({
             var _heightRecords = this.data._heightRecords;
             if (_heightRecords.length === 0) return;
             var length = this.data.vtabs.length;
+            console.log('length:' + length);
             var scrollTop = e.detail.scrollTop;
             var index = 0;
             if (scrollTop >= _heightRecords[0]) {

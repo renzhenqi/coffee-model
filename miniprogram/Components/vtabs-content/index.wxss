@@ -1,1 +1,7 @@
-.weui-tabs-content__item{width:100%;height:100%}
+.page {
+	background-color: #ffffff;
+}
+.weui-tabs-content__item{width:100%;height:100%;}
+.weui-vtabs-content__item {
+	background-color: #ffffff;
+}

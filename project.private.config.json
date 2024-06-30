@@ -4,13 +4,13 @@
   "setting": {
     "compileHotReLoad": true
   },
-  "libVersion": "3.3.5",
+  "libVersion": "3.4.8",
   "condition": {
     "miniprogram": {
       "list": [
         {
-          "name": "pages/products/products",
-          "pathName": "pages/products/products",
+          "name": "pages/profile/profile",
+          "pathName": "pages/profile/profile",
           "query": "",
           "launchMode": "default",
           "scene": null

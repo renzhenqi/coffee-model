@@ -17,6 +17,7 @@
             <view class="weui-vtabs-bar__title {{activeTab === index ? activeClass : ''}}">
               <text class="">{{item.title}}</text>
             </view>
+            <!-- <view style="height: 200rpx;"></view> -->
           </view>
         </block>
       </view>
